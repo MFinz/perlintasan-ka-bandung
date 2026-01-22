@@ -61,10 +61,11 @@ st.subheader("Peta Perlintasan KA")
 st_folium(m, height=500, width=800)
 
 # Judul Pie Chart
-st.subheader("Data penting mengenai Perlintasan KA")
+st.subheader("Data Penting Mengenai Perlintasan KA")
 st.pyplot(fig)
 
 # Simpan ke HTML
 # m.save("peta_coba.html")
 # print("Peta berhasil dibuat!")
+
 
