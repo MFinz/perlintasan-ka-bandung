@@ -52,7 +52,8 @@ for index, row in df.iterrows():
     folium.Marker(
     location = [row['lat'], row['lon']],
     tooltip = row['nama_lokasi'],
-    popup = row['nama_lokasi']
+    popup = row['nama_lokasi'],
+    icon =folium.Icon(color="blue", icon="train", prefix="fa")
     ).add_to(m)
 
 # Tampil di Streamlit
@@ -66,3 +67,4 @@ st.pyplot(fig)
 # Simpan ke HTML
 # m.save("peta_coba.html")
 # print("Peta berhasil dibuat!")
+
